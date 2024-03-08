@@ -4,19 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src="../frontend/script.js/fetch.js" defer></script> -->
+    <script src="../frontend/script.js/script.js" defer></script>
     <script src="../frontend/script.js/ajax.js" defer></script>
+    <link rel="stylesheet" href="../frontend/css/style.css">
     <title>login</title>
 </head>
 <body>
-    <form action="../backend/index.php" method="post" enctype="multipart/form-data" id="form-fetch">
-        <!-- <button type="">Crear Usuario</button> -->
-        <!-- <script> console.log("ASDSAD")</script> -->
-        <input type="text" name="nombreCompleto" placeholder="Nombre completo">
-        <input type="email" name="correoElectronico" placeholder="Correo electronico">
-        <input type="text" name="nombreUsuario" placeholder="Nombre usuario">
-        <input type="password" name="pass" placeholder="Contra">
-        <input type="date" name="fechaNacimiento" placeholder="fecha nacimiento">
-        <button type="submit" >Subir</button>
-    </form>
+    <div class="contanier-form-register">
+        <form action="../backend/index.php" method="post" enctype="multipart/form-data" id="form-login" class="form-login">
+            <!-- <button type="">Crear Usuario</button> -->
+            <!-- <script> console.log("ASDSAD")</script> -->
+            <label for="">Iniciar Sesion</label>
+            <label for="">Ingrese nombre de   usuario</label>
+            <input type="text" name="nombreUsuario" placeholder="Nombre usuario">
+            <label for="">Ingrese password</label>
+            <input type="password" name="pass" placeholder="Contra">
+            <button type="submit" >Ingresar</button>
+            <button type="submit" id="btn-registrarme">Registrarme</button>
+        </form>
+        <form action="../backend/index.php" method="post" enctype="multipart/form-data" id="form-register" class="form-register oculto" >
+            <!-- <button type="">Crear Usuario</button> -->
+            <!-- <script> console.log("ASDSAD")</script> -->
+            <label for="">Registrarse</label>
+            <label for="">Ingrese nombre completo</label>
+            <input type="text" name="nombreCompleto" placeholder="Nombre completo">
+            <label for="">Ingrese correo electronico</label>
+            <input type="email" name="correoElectronico" placeholder="Correo electronico">
+            <label for="">Ingrese nombre de usuario</label>
+            <input type="text" name="nombreUsuario" placeholder="Nombre usuario">
+            <label for="">Ingrese password</label>
+            <input type="password" name="pass" placeholder="Contra">
+            <label for="">Ingrese fecha de nacimiento</label>
+            <input type="date" name="fechaNacimiento" placeholder="fecha nacimiento">
+            <div>
+                <button type="submit" >Registrarse</button>
+                <button type="button" id="btn-volver">Volver</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

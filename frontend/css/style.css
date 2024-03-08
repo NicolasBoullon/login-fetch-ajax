@@ -1,0 +1,50 @@
+*{
+ box-sizing: border-box;   
+}
+
+.form-register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    border: #fff 1px solid;
+    color: #fff;
+    width: 20%;
+    height: 100%;
+}
+.form-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    border: #fff 1px solid;
+    color: #fff;
+    width: 20%;
+    height: 80%;
+}
+
+.oculto{
+    display: none;
+}
+
+.contanier-form-register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+label{
+    padding-top: 4px;
+}
+button{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+body{
+    background-color: #111;
+}

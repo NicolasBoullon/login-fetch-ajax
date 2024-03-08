@@ -1,7 +1,7 @@
 
 
 
-const form = document.getElementById("form-fetch");
+const form = document.getElementById("form-register");
 
 form.addEventListener("submit",function(e){
     e.preventDefault();

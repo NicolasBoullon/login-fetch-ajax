@@ -1,5 +1,5 @@
 
-const form = document.getElementById("form-fetch");
+const form = document.getElementById("form-alta");
 
 form.addEventListener("submit",function(e){
     e.preventDefault();
@@ -9,18 +9,18 @@ form.addEventListener("submit",function(e){
 })
 
 //----------------------------------------------THEN CATCH
-// async function crearUsuario_fetch(nuevoUsuario){
-//     const URL = "../../login/backend/index.php"
-//     fetch(URL, {
-//         method: 'POST',
-//         body: nuevoUsuario,
-//     })
-//     .then(response => response.text())
-//     .then(data => {
-//         console.log(data);
-//     })
-//     .catch(error => console.error('Error:', error));
-// }
+function crearUsuario_fetch(nuevoUsuario){
+    const URL = "../../login/backend/index.php"
+    fetch(URL, {
+        method: 'POST',
+        body: nuevoUsuario,
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => console.error('Error:', error));
+}
 
 //----------------------------------------------ASYNC AWAIT
 async function crearUsuario_fetch(nuevoUsuario) {
@@ -35,4 +35,8 @@ async function crearUsuario_fetch(nuevoUsuario) {
     } catch (error) {
         console.error('Error:', error);
     }
+}
+
+async function traerUsuarios_fetch(){
+
 }
