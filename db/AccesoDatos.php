@@ -8,7 +8,7 @@ class AccesoDatos
     private function __construct() {
         $servername = "localhost";
         $username = "root";
-        $password = ""; // Asegúrate de que la contraseña sea correcta para el usuario 'root'
+        $password = "";
         $dbname = "login";
     
         $this->objetoPDO = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -28,9 +28,5 @@ class AccesoDatos
         return $this->objetoPDO->prepare($sql);
     }
 
-    // public function obtenerUltimoId()
-    // {
-    //     return $this->objetoPDO->lastInsertId();
-    // }
 }
 ?>

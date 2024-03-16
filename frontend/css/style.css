@@ -25,6 +25,7 @@
     height: 80%;
 }
 
+
 .oculto{
     display: none;
 }
@@ -47,4 +48,29 @@ button{
 
 body{
     background-color: #111;
+}
+
+/* TABLA DE USUARIOS */
+#div-container-table{
+    display: flex;
+    justify-content: center;
+}
+table{
+    background-color: #222;
+    border: #fff 1px solid;
+    color: #fff;
+    border-collapse: collapse;
+}
+td,th{
+    border: 1px solid #fff;
+}
+
+td{
+    text-align: center;
+} 
+tr:hover{
+    background-color: #555;
+}
+th{
+    background-color: #555;
 }
